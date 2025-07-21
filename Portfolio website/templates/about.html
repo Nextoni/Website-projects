@@ -1,0 +1,49 @@
+{% include "header.html" %}
+
+
+<header
+  class="masthead"
+  style="background-image: url('../static/assets/img/about-bg.jpg')"
+>
+  <div class="container position-relative px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <div class="page-heading">
+          <h1>About Me</h1>
+          <span class="subheading">This is what I've done.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="mb-4">
+  <div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+
+        <p>
+          I have graduated from Burgas's "Prof. dr. Asen Zlatarov"
+          university with a bachelor's degree in software engineering.
+          After which i have studied python on my own and through a course
+          called "100 days of code: The complete python pro bootcamp" by Angela Yu.
+        </p>
+        <p>
+          I have a lot of different hobbies like gaming, cooking, baking and playing
+          a bit of piano.
+        </p>
+        <div class="d-flex justify-content-center">
+          <a href="{{ url_for('static', filename='my_cv.pdf') }}" target="_blank">
+            <button type="button" class="btn btn-outline-info">View CV</button>
+          </a>
+          <a href="{{ url_for('static', filename='my_cv.pdf') }}" download>
+            <button type="button" class="btn btn-outline-info">Download CV</button>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</main>
+
+{% include "footer.html" %}
