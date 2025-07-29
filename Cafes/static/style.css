@@ -1,0 +1,23 @@
+/* static/style.css */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.card-title {
+    color: #007bff;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-footer {
+    background-color: transparent;
+    border-top: none;
+}
+
+.list-group {
+    margin: 100px auto;
+}
